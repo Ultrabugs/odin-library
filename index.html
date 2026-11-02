@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="#home"><p>Bewgsy <span class="drk-orange">Bookstore</span> &#x2122; </p></a>
+        </div>
+        <div class="main">
+            <div class="book-container">
+                <div class="book-top-container">
+                    <div class="title-container">
+                        <p class="title-header">📚 Book <span class="drk-orange">Library</span></p>
+                        <div class="btn-container">
+                            <button command="show-modal" commandfor="my-dialog">Add Book</button>
+                                <dialog class="dialog-container" id="my-dialog">
+                                    <form action="#" method="post">
+                                        <p>
+                                            <label for="title">Title of book:</label>
+                                            <input class="title" type="text" name="title" id="title" required>
+                                        </p>
+                                        <p>
+                                            <label for="author">Author:</label>
+                                            <input class="author" type="text" name="author" id="author" required>
+                                        </p>
+
+                                            
+                                        <p>
+                                            <label for="pages">Pages:</label>
+                                            <input class="pages" type="text" name="pages" id="pages" required>
+                                        </p>
+                                            
+                                        <p>
+                                            <label for="read">Have you read it</label>
+                                            <select class="read" name="read" id="read">
+                                                <option value="read">read</option>
+                                                <option value="unread">not read</option>
+                                            </select>
+                                        </p>
+                                        <div class="last-btns">
+                                            <div class="btn-cells one">
+                                                <button class="frm-btn">Submit</button>
+                                            </div>
+                                            
+                                            <div class="btn-cells two">   
+                                                <button class="last-btn" commandfor="my-dialog" command="close" type="button">Close</button>
+
+                                            </div>
+                                        </div>  
+                                    </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="book-output">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
