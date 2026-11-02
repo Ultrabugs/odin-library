@@ -9,13 +9,15 @@
 <body>
     <div class="container">
         <div class="nav">
-            <a href="#home"><p>Bewgsy <span class="drk-orange">Bookstore</span> &#x2122; </p></a>
+            <a class="title-top" href="#home"><p>Bewgsy <span class="drk-orange">Bookstore</span> &#x2122; </p></a>
+            <button class="dark-mode-btn">Dark Mode</button>
         </div>
         <div class="main">
             <div class="book-container">
                 <div class="book-top-container">
                     <div class="title-container">
                         <p class="title-header">📚 Book <span class="drk-orange">Library</span></p>
+                        
                         <div class="btn-container">
                             <button command="show-modal" commandfor="my-dialog">Add Book</button>
                                 <dialog class="dialog-container" id="my-dialog">
@@ -67,5 +69,6 @@
     </div>
     
     <script src="main.js"></script>
+    <script src="dark.js"></script>
 </body>
 </html>
